@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,minimum-scale=1.0,maximum-scale=1.0" />
+        <title>index</title> 
+        <style>
+            html{
+                width: 800px;
+                height: 600px;
+            }
+            body{
+                margin: 0;
+                padding: 0;
+                width: 800px;
+                height: 600px;
+            }
+            h1{
+                margin: 0;
+                padding: 0;
+            }
+            p{
+                margin: 0;
+            }
+            .header{
+                height: 279px;
+            }
+            .lakename{
+                width: 377px;
+                height: 67px;
+                display: flex;
+                align-items: center;
+                background-color: pink;
+            }
+            .text{
+                width: 377px;
+                height: 172px;
+                margin-top: 20px;
+                background-color: pink;
+                font-size: 18px;
+            }
+            .left{
+                float: left;
+                margin-left: 20px;
+                margin-top: 20px;
+            }
+            .lakeimage{
+                float: left;
+                width: 350px;
+                height: 196px;
+                margin-top: 44px;
+                margin-left: 33px;
+                background-color: pink;
+            }
+            .linechart{
+                clear: both;
+                width: 760px;
+                height: 250px;
+                margin-top: 20px;
+                margin-left: 20px;
+                background-color: pink;
+            }
+            ul{
+                padding: 0;
+                margin-left: 20px;
+                margin-right: 20px;
+                margin-top: 20px;
+                margin-bottom: 0;
+            }
+            li{
+                display: inline-block;
+                background-color:pink;
+                width: 123px;
+                height: 35px;
+                font-size: 20px;
+                text-align: center;
+                line-height: 35px;
+                border-radius: 10px; /* 圆角 */
+                text-decoration: none; /* 去除超链接的下划线 */
+                cursor: pointer; /* 鼠标移上去变成手指 */
+            }
+            .limid{
+                margin-left: 191px;
+                margin-right: 190px;
+            }
+            .picpopup{
+                width:666px;
+                height:433px;
+                display: none;
+                position: fixed;
+                top: 50%; 
+                left: 50%;
+                transform: translate(-50%, -50%); /* 使弹窗居中 */
+                background-color: pink;
+                padding: 0px; /* 弹窗内边距 */
+                border: 1px solid black; /* 弹窗边框 */
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                z-index: 1000;
+                text-align: center;
+            }
+            .picpopup img{
+                width: 40%;
+                padding: 20px;
+            }
+            .close-btn{
+                position: absolute;
+                top: 10px;
+                right: 20px;
+                cursor: pointer;
+                color: #f1f1f1;
+                font-size: 20px;
+                font-weight: bold;
+                transition: 0.3s;
+            }
+            .close-btn:hover,
+            .close-btn:focus {
+                color: #bbb;
+                text-decoration: none;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="left">
+                <div class="lakename">
+                    <h1>鄱阳湖</h1>
+                </div>
+                <div class="text">
+                    <p>近些年，国家对于旅游业发展尤为重视，注重旅游产业与信息化技术融合，在《关于进一步激发文化和旅游消费潜力的意见》《关于促进消费扩容提质加快形成强大国内市场的实施意见》文件指导下，着力加强旅游产业与信息化技术融合，促进全新旅游产业模式发展，重构旅游产业生态，</p>
+                </div>
+            </div>
+            <div class="lakeimage">
+                <img src="" alt="湖泊介绍图">
+            </div>
+        </div>
+        <div class="mid">
+            <div class="linechart">
+                <img src="" alt="面积折线图">
+            </div>
+        </div>
+        <div class="footer">
+            <ul>
+                <li onclick="showPopup()">2021</li>
+                <li class="limid" onclick="showPopup()">2022</li>
+                <li onclick="showPopup()">2023</li>
+            </ul>
+        </div>
+        <div class="picpopup" id="picpopup">
+            <span class="close-btn" onclick="document.getElementById('picpopup').style.display='none'">X</span>
+            <img src="https://pic.imgdb.cn/item/65728fe0c458853aef40568b.jpg" alt="丰水期">
+            <img src="https://pic.imgdb.cn/item/65728fe0c458853aef40568b.jpg" alt="枯水期">
+        </div>
+        <script>
+            function showPopup() {
+                var picpopup = document.getElementById('picpopup');
+                picpopup.style.display = 'block';
+            }
+        </script>
+    </body>
+</html>
