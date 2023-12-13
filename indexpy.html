@@ -30,14 +30,14 @@
                 height: 67px;
                 display: flex;
                 align-items: center;
-                background-color: pink;
             }
             .text{
                 width: 377px;
                 height: 172px;
                 margin-top: 20px;
-                background-color: pink;
                 font-size: 18px;
+                /* 首行缩进 */
+                text-indent: 2em;
             }
             .left{
                 float: left;
@@ -50,7 +50,9 @@
                 height: 196px;
                 margin-top: 44px;
                 margin-left: 33px;
-                background-color: pink;
+            }
+            .lakeimage img{
+                width: 100%;
             }
             .linechart{
                 clear: both;
@@ -58,7 +60,6 @@
                 height: 250px;
                 margin-top: 20px;
                 margin-left: 20px;
-                background-color: pink;
             }
             ul{
                 padding: 0;
@@ -69,7 +70,6 @@
             }
             li{
                 display: inline-block;
-                background-color:pink;
                 width: 123px;
                 height: 35px;
                 font-size: 20px;
@@ -78,6 +78,10 @@
                 border-radius: 10px; /* 圆角 */
                 text-decoration: none; /* 去除超链接的下划线 */
                 cursor: pointer; /* 鼠标移上去变成手指 */
+                background-color: rgb(100, 222, 100);
+            }
+            li:hover{
+                background-color: rgb(67, 187, 67);
             }
             .limid{
                 margin-left: 191px;
@@ -91,12 +95,12 @@
                 top: 50%; 
                 left: 50%;
                 transform: translate(-50%, -50%); /* 使弹窗居中 */
-                background-color: pink;
                 padding: 0px; /* 弹窗内边距 */
                 border: 1px solid black; /* 弹窗边框 */
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
                 z-index: 1000;
                 text-align: center;
+                background-color: white;
             }
             .picpopup img{
                 width: 40%;
@@ -127,11 +131,13 @@
                     <h1>鄱阳湖</h1>
                 </div>
                 <div class="text">
-                    <p>近些年，国家对于旅游业发展尤为重视，注重旅游产业与信息化技术融合，在《关于进一步激发文化和旅游消费潜力的意见》《关于促进消费扩容提质加快形成强大国内市场的实施意见》文件指导下，着力加强旅游产业与信息化技术融合，促进全新旅游产业模式发展，重构旅游产业生态，</p>
+                    <p>鄱阳湖，是中国第一大淡水湖，也是中国第二大湖，仅次于青海湖。
+                        鄱阳湖承纳赣江、抚河、信江、饶河、修河五大江河及博阳河、漳田河等区间来水，经调蓄后在湖口注入长江。
+                        其在调节长江水位、涵养水源、改善当地气候和维护周围地区生态平衡等方面都起着巨大的作用。</p>
                 </div>
             </div>
             <div class="lakeimage">
-                <img src="" alt="湖泊介绍图">
+                <img src="https://pic.imgdb.cn/item/6579263dc458853aef51d62f.jpg" alt="湖泊介绍图">
             </div>
         </div>
         <div class="mid">
@@ -148,8 +154,8 @@
         </div>
         <div class="picpopup" id="picpopup">
             <span class="close-btn" onclick="document.getElementById('picpopup').style.display='none'">X</span>
-            <img src="https://pic.imgdb.cn/item/65728fe0c458853aef40568b.jpg" alt="丰水期">
-            <img src="https://pic.imgdb.cn/item/65728fe0c458853aef40568b.jpg" alt="枯水期">
+            <img src="" alt="丰水期">
+            <img src="" alt="枯水期">
         </div>
         <script>
             function showPopup() {
