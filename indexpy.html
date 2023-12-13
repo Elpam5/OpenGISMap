@@ -87,7 +87,7 @@
                 margin-left: 191px;
                 margin-right: 190px;
             }
-            .picpopup{
+            .picpopup2021,.picpopup2022,.picpopup2023{
                 width:666px;
                 height:433px;
                 display: none;
@@ -102,7 +102,15 @@
                 text-align: center;
                 background-color: white;
             }
-            .picpopup img{
+            .picpopup2021 img{
+                width: 40%;
+                padding: 20px;
+            }
+            .picpopup2022 img{
+                width: 40%;
+                padding: 20px;
+            }
+            .picpopup2023 img{
                 width: 40%;
                 padding: 20px;
             }
@@ -147,19 +155,37 @@
         </div>
         <div class="footer">
             <ul>
-                <li onclick="showPopup()">2021</li>
-                <li class="limid" onclick="showPopup()">2022</li>
-                <li onclick="showPopup()">2023</li>
+                <li onclick="showPopup2021()">2021</li>
+                <li class="limid" onclick="showPopup2022()">2022</li>
+                <li onclick="showPopup2023()">2023</li>
             </ul>
         </div>
-        <div class="picpopup" id="picpopup">
-            <span class="close-btn" onclick="document.getElementById('picpopup').style.display='none'">X</span>
-            <img src="" alt="丰水期">
+        <div class="picpopup2021" id="picpopup2021">
+            <span class="close-btn" onclick="document.getElementById('picpopup2021').style.display='none'">X</span>
+            <img src="https://pic.imgdb.cn/item/65799614c458853aefa5da40.jpg" alt="丰水期2021">
+            <img src="https://pic.imgdb.cn/item/65799614c458853aefa5da40.jpg" alt="枯水期">
+        </div>
+        <div class="picpopup2022" id="picpopup2022">
+            <span class="close-btn" onclick="document.getElementById('picpopup2022').style.display='none'">X</span>
+            <img src="https://pic.imgdb.cn/item/65799614c458853aefa5da40.jpg" alt="丰水期2022">
+            <img src="" alt="枯水期">
+        </div>
+        <div class="picpopup2023" id="picpopup2023">
+            <span class="close-btn" onclick="document.getElementById('picpopup2023').style.display='none'">X</span>
+            <img src="https://pic.imgdb.cn/item/65799614c458853aefa5da40.jpg" alt="丰水期2023">
             <img src="" alt="枯水期">
         </div>
         <script>
-            function showPopup() {
-                var picpopup = document.getElementById('picpopup');
+            function showPopup2021() {
+                var picpopup = document.getElementById('picpopup2021');
+                picpopup.style.display = 'block';
+            }
+            function showPopup2022() {
+                var picpopup = document.getElementById('picpopup2022');
+                picpopup.style.display = 'block';
+            }
+            function showPopup2023() {
+                var picpopup = document.getElementById('picpopup2023');
                 picpopup.style.display = 'block';
             }
         </script>
