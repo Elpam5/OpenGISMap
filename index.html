@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,minimum-scale=1.0,maximum-scale=1.0" />
         <title>index</title> 
         <style>
+            /* css样式设置 */
             html{
                 width: 800px;
                 height: 600px;
@@ -25,17 +26,17 @@
             .header{
                 height: 279px;
             }
-            .lakename{
-                width: 377px;
-                height: 67px;
-                display: flex;
-                align-items: center;
+            .lakename{ /* 湖泊名称div的样式设置 */
+                width: 377px; /* 宽度 */
+                height: 67px; /* 高度 */
+                display: flex; /* 弹性布局 */
+                align-items: center; /* 垂直居中 */
             }
-            .text{
+            .text{ /* 湖泊介绍div的样式设置 */
                 width: 377px;
                 height: 172px;
-                margin-top: 20px;
-                font-size: 18px;
+                margin-top: 20px; /* 上边距 */
+                font-size: 18px; /* 字体大小 */
                 /* 首行缩进 */
                 text-indent: 2em;
             }
@@ -44,7 +45,7 @@
                 margin-left: 20px;
                 margin-top: 20px;
             }
-            .lakeimage{
+            .lakeimage{ /* 湖泊图片样式 */
                 float: left;
                 width: 350px;
                 height: 196px;
@@ -54,7 +55,7 @@
             .lakeimage img{
                 width: 100%;
             }
-            .linechart{
+            .linechart{ /* 面积折线图样式 */
                 clear: both;
                 width: 760px;
                 height: 250px;
@@ -68,39 +69,39 @@
                 margin-top: 20px;
                 margin-bottom: 0;
             }
-            li{
+            li{ /* 按钮样式 */
                 display: inline-block;
                 width: 123px;
                 height: 35px;
                 font-size: 20px;
-                text-align: center;
-                line-height: 35px;
+                text-align: center; /* 水平居中 */
+                line-height: 35px; /* 垂直居中 */
                 border-radius: 10px; /* 圆角 */
                 text-decoration: none; /* 去除超链接的下划线 */
                 cursor: pointer; /* 鼠标移上去变成手指 */
-                background-color: rgb(100, 222, 100);
+                background-color: rgb(100, 222, 100); /* 背景颜色 */
             }
-            li:hover{
+            li:hover{ /* 鼠标移上去的样式 */
                 background-color: rgb(67, 187, 67);
             }
             .limid{
                 margin-left: 191px;
                 margin-right: 190px;
             }
-            .picpopup2021,.picpopup2022,.picpopup2023{
+            .picpopup2021,.picpopup2022,.picpopup2023{ /* 弹窗样式 */
                 width:666px;
                 height:433px;
-                display: none;
+                display: none; /* 默认不显示 */
                 position: fixed;
-                top: 50%; 
-                left: 50%;
+                top: 50%;  /* 使弹窗居中 */
+                left: 50%; /* 使弹窗居中 */
                 transform: translate(-50%, -50%); /* 使弹窗居中 */
                 padding: 0px; /* 弹窗内边距 */
                 border: 1px solid black; /* 弹窗边框 */
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-                z-index: 1000;
-                text-align: center;
-                background-color: white;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 弹窗阴影 */
+                z-index: 1000; /* 弹窗层级 */
+                text-align: center; /* 水平居中 */
+                background-color: white; 
             }
             .picpopup2021 img{
                 width: 40%;
@@ -114,72 +115,73 @@
                 width: 40%;
                 padding: 20px;
             }
-            .close-btn{
-                position: absolute;
+            .close-btn{ /* 关闭按钮样式 */
+                position: absolute; /* 绝对定位 */
                 top: 10px;
                 right: 20px;
-                cursor: pointer;
+                cursor: pointer; /* 鼠标移上去变成手指 */
                 color: #f1f1f1;
                 font-size: 20px;
                 font-weight: bold;
-                transition: 0.3s;
+                transition: 0.3s; /* 过渡效果 */
             }
             .close-btn:hover,
-            .close-btn:focus {
+            .close-btn:focus { /* 鼠标移上去的样式 */
                 color: #bbb;
-                text-decoration: none;
-                cursor: pointer;
+                text-decoration: none; /* 去除超链接的下划线 */
+                cursor: pointer; /* 鼠标移上去变成手指 */
             }
         </style>
     </head>
     <body>
-        <div class="header">
-            <div class="left">
-                <div class="lakename">
+        <div class="header"> <!-- 头部,定义class属性是为了在css代码中对各个div进行样式设置 -->
+            <div class="left"> <!-- 左侧 -->
+                <div class="lakename"> <!-- 湖泊名称div -->
                     <h1>鄱阳湖</h1>
                 </div>
-                <div class="text">
+                <div class="text"> <!-- 湖泊介绍div -->
                     <p>鄱阳湖，是中国第一大淡水湖，也是中国第二大湖，仅次于青海湖。
                         鄱阳湖承纳赣江、抚河、信江、饶河、修河五大江河及博阳河、漳田河等区间来水，经调蓄后在湖口注入长江。
                         其在调节长江水位、涵养水源、改善当地气候和维护周围地区生态平衡等方面都起着巨大的作用。</p>
                 </div>
             </div>
-            <div class="lakeimage">
+            <div class="lakeimage"> <!-- 右侧，湖泊介绍图div -->
                 <img src="https://pic.imgdb.cn/item/6579263dc458853aef51d62f.jpg" alt="湖泊介绍图">
             </div>
         </div>
-        <div class="mid">
+        <div class="mid"> <!-- 中部，面积折线图div -->
             <div class="linechart">
                 <img src="" alt="面积折线图">
             </div>
         </div>
-        <div class="footer">
+        <div class="footer"> <!-- 底部 -->
             <ul>
-                <li onclick="showPopup2021()">2021</li>
+                <li onclick="showPopup2021()">2021</li> <!-- li标签，使用css设置为按钮样式，点击弹出图片 -->
                 <li class="limid" onclick="showPopup2022()">2022</li>
                 <li onclick="showPopup2023()">2023</li>
             </ul>
         </div>
-        <div class="picpopup2021" id="picpopup2021">
-            <span class="close-btn" onclick="document.getElementById('picpopup2021').style.display='none'">X</span>
+        <div class="picpopup2021" id="picpopup2021"> 
+            <span class="close-btn" onclick="document.getElementById('picpopup2021').style.display='none'">X</span> <!-- 关闭按钮 -->
             <img src="https://pic.imgdb.cn/item/65799614c458853aefa5da40.jpg" alt="丰水期2021">
             <img src="https://pic.imgdb.cn/item/65799614c458853aefa5da40.jpg" alt="枯水期">
         </div>
         <div class="picpopup2022" id="picpopup2022">
-            <span class="close-btn" onclick="document.getElementById('picpopup2022').style.display='none'">X</span>
+            <span class="close-btn" onclick="document.getElementById('picpopup2022').style.display='none'">X</span> <!-- 关闭按钮 -->
             <img src="https://pic.imgdb.cn/item/65799614c458853aefa5da40.jpg" alt="丰水期2022">
             <img src="" alt="枯水期">
         </div>
         <div class="picpopup2023" id="picpopup2023">
-            <span class="close-btn" onclick="document.getElementById('picpopup2023').style.display='none'">X</span>
+            <span class="close-btn" onclick="document.getElementById('picpopup2023').style.display='none'">X</span> <!-- 关闭按钮 -->
             <img src="https://pic.imgdb.cn/item/65799614c458853aefa5da40.jpg" alt="丰水期2023">
             <img src="" alt="枯水期">
         </div>
+        <!-- js代码 -->
         <script>
             function showPopup2021() {
                 var picpopup = document.getElementById('picpopup2021');
-                picpopup.style.display = 'block';
-            }
+                picpopup.style.display = 'block'; //将弹窗的display属性设置从none修改为block，即显示
+            } //最笨的办法，每一个按钮对应一个方法
             function showPopup2022() {
                 var picpopup = document.getElementById('picpopup2022');
                 picpopup.style.display = 'block';
