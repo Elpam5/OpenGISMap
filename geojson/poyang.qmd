@@ -1,10 +1,10 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
 <qgis version="3.32.2-Lima">
-  <identifier>江西_lake</identifier>
+  <identifier>融合</identifier>
   <parentidentifier></parentidentifier>
   <language>ZHO</language>
   <type>dataset</type>
-  <title>江西_lake</title>
+  <title>融合</title>
   <abstract></abstract>
   <links/>
   <dates/>
